@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css'
-import { Display } from './components/display'
+import { Display } from './components/display';
+import { SelectCurrency } from './components/selectCurrency';
 
 function App() {
   const [dolarPrice, setDolarPrice] = useState(null);
@@ -20,6 +21,8 @@ function App() {
     <div className="App">
       <div>
         <Display dolarPrice={dolarPrice}/>
+      <SelectCurrency/>
+      <SelectCurrency/>
       </div>
     </div>
 
